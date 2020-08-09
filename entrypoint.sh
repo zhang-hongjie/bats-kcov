@@ -19,6 +19,6 @@ echo -e "\n"
 kcov --bash-dont-parse-binary-dir \
      --include-path=. \
      /var/tmp/coverage \
-     bats -t tests
+     bats -t test
 
 /usr/local/bin/codecov -s /var/tmp/coverage -B "${GITHUB_REF##*/}"
